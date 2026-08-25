@@ -6,7 +6,7 @@
     
 <!--<servlet>-->
 <!--    <servlet-name>Persons</servlet-name>-->
-<!--    <servlet-class>com.black.jakarta_test2.controller.PersonServlet</servlet-class>-->
+<!--    <servlet-class>com.black.jakarta_test2.controller.Sample</servlet-class>-->
 <!--    <load-on-startup>1</load-on-startup>-->
 <!--</servlet>-->
 
