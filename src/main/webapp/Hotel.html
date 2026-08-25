@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هتل بوتیک نواندیش</title>
+    <style>
+        :root {
+            --ink: #1c1917;
+            --muted: #78716c;
+            --paper: #faf7f2;
+            --gold: #b08968;
+            --gold-deep: #8d6b4f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Vazirmatn", "IRANSans", Tahoma, sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.8;
+        }
+        header {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background:
+                    linear-gradient(180deg, rgba(28,25,23,.35), rgba(28,25,23,.72)),
+                    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80")
+                    center/cover no-repeat;
+            color: #fff;
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav strong { letter-spacing: .08em; }
+        nav a { color: #fff; text-decoration: none; margin-right: 1.2rem; opacity: .9; }
+        .hero { max-width: 38rem; padding-bottom: 4rem; }
+        .hero span { color: #e7d3b5; font-size: .9rem; }
+        .hero h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.25; margin: .6rem 0 1rem; }
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: .85rem 1.6rem;
+            background: var(--gold);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 999px;
+        }
+        .btn:hover { background: var(--gold-deep); }
+        section { padding: 5rem 8vw; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.4rem;
+        }
+        article {
+            background: #fff;
+            border-radius: 1.2rem;
+            padding: 1.4rem;
+            box-shadow: 0 10px 30px rgba(28, 25, 23, .06);
+        }
+        article p { color: var(--muted); }
+        article b { color: var(--gold-deep); display: block; margin-top: .8rem; }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <strong>NOANDISH BOUTIQUE</strong>
+        <div>
+            <a href="#rooms">اتاق‌ها</a>
+            <a href="#book">رزرو</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <span>تهران · اقامت آرام</span>
+        <h1>شبی آرام، دور از شلوغی شهر</h1>
+        <p>یک هتل بوتیک کوچک؛ اتاق محدود، میزبانی دقیق، رزرو ساده.</p>
+        <a class="btn" href="#book">مشاهده اتاق‌ها</a>
+    </div>
+</header>
+
+<section id="rooms">
+    <h2>اتاق‌های امروز</h2>
+    <div class="rooms">
+        <article>
+            <h3>اتاق استاندارد</h3>
+            <p>یک تخت، مناسب اقامت کوتاه.</p>
+            <b>۲٬۸۰۰٬۰۰۰ تومان / شب</b>
+        </article>
+        <article>
+            <h3>سوئیت باغ</h3>
+            <p>نور طبیعی، فضای کار و استراحت.</p>
+            <b>۴٬۶۰۰٬۰۰۰ تومان / شب</b>
+        </article>
+        <article>
+            <h3>پنت‌هاوس</h3>
+            <p>دید باز، مناسب سفر دونفره.</p>
+            <b>۷٬۲۰۰٬۰۰۰ تومان / شب</b>
+        </article>
+    </div>
+</section>
+</body>
+</html>
